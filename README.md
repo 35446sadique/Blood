@@ -22,9 +22,3 @@ A web-based platform for blood donation management that connects donors with rec
 - Python 3.6 or higher
 - pip (Python package manager)
 
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/blood-donation-system.git
-   cd blood-donation-system
