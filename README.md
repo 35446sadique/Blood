@@ -1,0 +1,30 @@
+# 🩸 Blood Donation Management System
+
+A web-based platform for blood donation management that connects donors with recipients and blood banks. Built with Python Flask, HTML, and SQLite.
+
+![Blood Donation](https://img.shields.io/badge/Blood-Donation-red)
+![Python](https://img.shields.io/badge/Python-3.6%2B-blue)
+![Flask](https://img.shields.io/badge/Flask-2.0%2B-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+## 🌟 Features
+
+- **Donor Registration** - Easy registration form for new blood donors
+- **Donor Search** - Find donors by blood group and location
+- **Blood Bank Locator** - Discover nearby blood banks
+- **Responsive Design** - Works on desktop and mobile devices
+- **Simple Interface** - User-friendly and easy to navigate
+- **SQLite Database** - Lightweight and efficient data storage
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Python 3.6 or higher
+- pip (Python package manager)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/blood-donation-system.git
+   cd blood-donation-system
