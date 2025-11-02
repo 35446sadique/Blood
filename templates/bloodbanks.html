@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Banks</title>
+    <style>
+        body { font-family: Arial; margin: 0; padding: 20px; background: #f0f0f0; }
+        .header { background: red; color: white; padding: 20px; text-align: center; }
+        .menu { background: #333; padding: 10px; }
+        .menu a { color: white; text-decoration: none; margin: 0 15px; }
+        .content { background: white; padding: 20px; margin: 20px 0; }
+        .bank { border: 1px solid #ccc; padding: 15px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Find Blood Banks</h1>
+    </div>
+    
+    <div class="menu">
+        <a href="/">Home</a>
+        <a href="/register">Register Donor</a>
+        <a href="/donors">Find Donors</a>
+        <a href="/bloodbanks">Blood Banks</a>
+    </div>
+    
+    <div class="content">
+        <h2>Search Blood Banks</h2>
+        <form method="get">
+            <input type="text" name="city" placeholder="City" value="{{ city }}">
+            <button type="submit">Search</button>
+        </form>
+        
+        <h3>Blood Banks:</h3>
+        {% if banks %}
+            {% for bank in banks %}
+            <div class="bank">
+                <h3>{{ bank[1] }}</h3>
+                <p>Address: {{ bank[2] }}</p>
+                <p>City: {{ bank[3] }}</p>
+                <p>Phone: {{ bank[4] }}</p>
+            </div>
+            {% endfor %}
+        {% else %}
+            <p>No blood banks found.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

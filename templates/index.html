@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Donation</title>
+    <style>
+        body { font-family: Arial; margin: 0; padding: 20px; background: #f0f0f0; }
+        .header { background: red; color: white; padding: 20px; text-align: center; }
+        .menu { background: #333; padding: 10px; }
+        .menu a { color: white; text-decoration: none; margin: 0 15px; }
+        .content { background: white; padding: 20px; margin: 20px 0; }
+        .btn { background: red; color: white; padding: 10px 20px; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🩸 Blood Donation System</h1>
+        <p>Save Lives - Donate Blood</p>
+    </div>
+    
+    <div class="menu">
+        <a href="/">Home</a>
+        <a href="/register">Register Donor</a>
+        <a href="/donors">Find Donors</a>
+        <a href="/bloodbanks">Blood Banks</a>
+    </div>
+    
+    <div class="content">
+        <h2>Welcome to Blood Donation System</h2>
+        <p>Register as a blood donor or find donors in your area.</p>
+        
+        <h3>Quick Search Donors</h3>
+        <form action="/donors" method="get">
+            <input type="text" name="city" placeholder="Enter city">
+            <select name="blood_group">
+                <option value="">Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+            <button type="submit" class="btn">Search Donors</button>
+        </form>
+        
+        <br>
+        <a href="/register" class="btn">Register as Donor</a>
+    </div>
+</body>
+</html>
