@@ -28,8 +28,11 @@ cursor.execute('''
 
 cursor.execute("INSERT OR IGNORE INTO donors VALUES (1, 'Tom', '555-1111', 'A+', 'Kerala')")
 cursor.execute("INSERT OR IGNORE INTO donors VALUES (2, 'Riya', '555-2222', 'O-', 'Karnataka')")
-cursor.execute("INSERT OR IGNORE INTO blood_banks VALUES (1, 'City Blood Bank', '123 Main St', 'Kerala', '555-0001')")
-cursor.execute("INSERT OR IGNORE INTO blood_banks VALUES (2, 'Central Blood Center', '456 Oak Ave', 'Karnataka', '555-0002')")
+cursor.execute("INSERT OR IGNORE INTO blood_banks VALUES (1, 'CN Blood Bank', 'Kankanady', 'Karnataka', '5664756')")
+cursor.execute("INSERT OR IGNORE INTO blood_banks VALUES (2, 'Life Blood Bank', 'jeppu', 'Karnataka', '7456456465')")
+cursor.execute("INSERT OR IGNORE INTO blood_banks VALUES (3, 'OH Blood Bank', 'Kadri', 'Karnataka', '5664756')")
+cursor.execute("INSERT OR IGNORE INTO blood_banks VALUES (4, 'Care Blood Bank', 'Kankanady', 'Karnataka', '5664756')")
+
 conn.commit()
 conn.close()
 
