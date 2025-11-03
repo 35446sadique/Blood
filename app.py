@@ -3,7 +3,7 @@ import sqlite3
 
 app = Flask(__name__)
 
-# Create database and tables
+
 conn = sqlite3.connect('blood.db')
 cursor = conn.cursor()
 cursor.execute('''
@@ -25,7 +25,7 @@ cursor.execute('''
     )
 ''')
 
-# Add sample data
+
 cursor.execute("INSERT OR IGNORE INTO donors VALUES (1, 'Tom', '555-1111', 'A+', 'Kerala')")
 cursor.execute("INSERT OR IGNORE INTO donors VALUES (2, 'Riya', '555-2222', 'O-', 'Karnataka')")
 cursor.execute("INSERT OR IGNORE INTO blood_banks VALUES (1, 'City Blood Bank', '123 Main St', 'Kerala', '555-0001')")

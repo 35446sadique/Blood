@@ -2,10 +2,6 @@
 
 A web-based platform for blood donation management that connects donors with recipients and blood banks. Built with Python Flask, HTML, and SQLite.
 
-![Blood Donation]
-![Python]
-![Flask]
-![License]
 
 ## 🌟 Features
 
